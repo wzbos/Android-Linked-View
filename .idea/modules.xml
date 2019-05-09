@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android-Linked-View.iml" filepath="$PROJECT_DIR$/Android-Linked-View.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/linkedview/linkedview.iml" filepath="$PROJECT_DIR$/linkedview/linkedview.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="wzblinkedview_cancel">取消</string>
+    <string name="wzblinkedview_ok">完成</string>
+    <string name="wzblinkedview_title">请选择</string>
+    <string name="wzblinkedview_txt_reset">重置</string>
+    <string name="wzblinkedview_txt_confirm">确认</string>
+</resources>

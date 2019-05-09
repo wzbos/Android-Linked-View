@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_linked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Linked\nView"
+        android:textAllCaps="false"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_simple"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Simple\nView"
+            android:textAllCaps="false"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_single"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Single\nPopupWindow"
+            android:textAllCaps="false"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_double"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Double\nPopupWindow"
+            android:textAllCaps="false"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <cn.wzbos.android.widget.linked.LinkedView
+        android:id="@+id/simpleLinkedView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <cn.wzbos.android.widget.linked.LinkedView
+        android:id="@+id/linkedView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</LinearLayout>

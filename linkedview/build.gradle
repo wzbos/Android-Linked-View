@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+
+ext {
+    bintrayName = 'linkedview'
+    artifact = bintrayName
+    libraryName = 'linkedview'
+    libraryDescription = 'android linked view'
+    libraryVersion = library_version
+}
+
+android {
+    compileSdkVersion compile_version
+
+    defaultConfig {
+        minSdkVersion min_version
+        targetSdkVersion target_version
+        versionCode 1
+        versionName library_version
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:recyclerview-v7:$support_version"
+    implementation "com.android.support.constraint:constraint-layout:$constraint_layout_version"
+}
+
+apply from: '../install.gradle'
+apply from: '../bintray.gradle'

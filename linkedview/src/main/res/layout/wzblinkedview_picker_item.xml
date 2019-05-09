@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <CheckedTextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/wzblinkedview_item_background"
+        android:checked="true"
+        android:drawableEnd="@drawable/wzblinkedview_item_checked"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/wzblinkedview_item_textcolor"
+        android:textSize="15sp"
+        tools:text="item" />
+
+
+</LinearLayout>
