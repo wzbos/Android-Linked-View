@@ -1,8 +1,8 @@
 # Android-Linked-View
 
-
+[![Download](https://api.bintray.com/packages/wuzongbo/maven/linkedview/images/download.svg)](https://bintray.com/wuzongbo/maven/linkedview/_latestVersion)
 [![Build Status](https://travis-ci.org/wzbos/Android-Linked-View.svg?branch=master)](https://travis-ci.org/wzbos/Android-Linked-View)
-[![Maven](https://img.shields.io/badge/jcenter-Android--Linked--View-green.svg?style=true)](http://jcenter.bintray.com/cn/wzbos/android/widget/linkedview)
+[![Maven](https://img.shields.io/badge/Jcenter-Android--Linked--View-green.svg?style=true)](http://jcenter.bintray.com/cn/wzbos/android/widget/linkedview)
 
 ## Gradle Dependency
 
@@ -13,7 +13,7 @@ buildscript {
     }
 }
 dependencies {
-    implementation "cn.wzbos.android.widget:linkedview:1.0.0"
+    implementation "cn.wzbos.android.widget:linkedview:1.0.1"
 }
 ```
 

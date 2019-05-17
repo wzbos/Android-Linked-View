@@ -5,6 +5,7 @@ import android.content.res.ColorStateList;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.StateListDrawable;
 import android.support.annotation.ColorInt;
+import android.support.annotation.ColorRes;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.IntDef;
 import android.support.annotation.NonNull;
@@ -170,13 +171,25 @@ public class PickerView extends RecyclerView {
     /**
      * 设置选项状态背景颜色
      *
-     * @param checkedColor   选中的背景颜色ID
-     * @param unCheckedColor 未选中的背景颜色ID
+     * @param checkedBkgColor   选中的背景颜色
+     * @param unCheckedBkgColor 未选中的背景颜色
      */
-    public PickerView setStateBackground(@ColorInt int checkedColor, @ColorInt int unCheckedColor) {
+    public PickerView setStateBackground(@ColorInt int checkedBkgColor, @ColorInt int unCheckedBkgColor) {
         this.stateBackground = null;
-        this.checkedBkgColor = checkedColor;
-        this.unCheckedBkgColor = unCheckedColor;
+        this.checkedBkgColor = checkedBkgColor;
+        this.unCheckedBkgColor = unCheckedBkgColor;
+        return this;
+    }
+
+    /**
+     * 设置选项文本颜色
+     *
+     * @param checkedColor 选中的文本颜色
+     * @param checkedColor 未选中的文本颜色
+     */
+    public PickerView setTextColor(@ColorInt int checkedColor, @ColorInt int unCheckedColor) {
+        this.checkedColor = checkedColor;
+        this.unCheckedColor = unCheckedColor;
         return this;
     }
 
